@@ -1,0 +1,9 @@
+<div class="inpDiv">
+  <mat-form-field appearance="outline">
+    <mat-label>Country Name</mat-label>
+    <input #input matInput placeholder="Country Name" />
+  </mat-form-field>
+  <button mat-raised-button (click)="countryInp(input.value)" color="primary">
+    Add
+  </button>
+</div>

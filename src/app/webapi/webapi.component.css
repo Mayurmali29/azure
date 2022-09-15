@@ -1,0 +1,19 @@
+.inpDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+button.mat-raised-button {
+  font-size: 10px;
+  font-weight: bold;
+  width: 80px;
+  height: 35px;
+}
+mat-form-field.mat-form-field {
+  font-size: 10px;
+}
+::ng-deep .mat-form-field-wrapper {
+  padding: 0;
+}
