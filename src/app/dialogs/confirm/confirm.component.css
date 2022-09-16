@@ -1,0 +1,16 @@
+.btnDiv {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+mat-form-field.mat-form-field {
+  width: 100%;
+  font-size: 10px;
+  margin-bottom: 0.5rem;
+}
+.dailog ::ng-deep .mat-form-field-wrapper {
+  padding: 0;
+}

@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+div {
+  width: 100%;
+}
+.childwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper ::ng-deep .mat-form-field-wrapper {
+  padding: 0;
+}
+
+mat-form-field {
+  font-size: 0.8rem;
+}

@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "~ngx-toastr/toastr";
 
 html,
 body {
@@ -12,4 +14,17 @@ body {
 }
 .container {
   margin: 1%;
+}
+.user-spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  /* backdrop-filter: blur(2px); */
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  right: 0;
+  bottom: 0px;
+  left: 0;
 }

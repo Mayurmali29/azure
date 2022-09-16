@@ -1,0 +1,26 @@
+<div class="dailog" mat-dialog-actions>
+  <mat-form-field appearance="outline">
+    <mat-label>Country Name</mat-label>
+    <input
+      value="{{ country }}"
+      [(ngModel)]="country"
+      matInput
+      placeholder="Country Name"
+    />
+  </mat-form-field>
+
+  <div class="btnDiv">
+    <button mat-button (click)="onDismiss()">No</button>
+    <button mat-raised-button color="primary" (click)="onConfirm()">Yes</button>
+  </div>
+</div>
+
+<!-- loader -->
+<div
+  *ngIf="loader"
+  fxLayout="column"
+  fxLayoutAlign="center center"
+  class="user-spinner"
+>
+  <mat-spinner color="primary" [diameter]="50"></mat-spinner>
+</div>

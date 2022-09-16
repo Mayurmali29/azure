@@ -1,9 +1,10 @@
 .inpDiv {
+  width: 30%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 2rem 0;
 }
 button.mat-raised-button {
   font-size: 10px;
@@ -14,6 +15,54 @@ button.mat-raised-button {
 mat-form-field.mat-form-field {
   font-size: 10px;
 }
-::ng-deep .mat-form-field-wrapper {
+.inpDiv ::ng-deep .mat-form-field-wrapper {
   padding: 0;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+th.mat-header-cell,
+td.mat-cell,
+td.mat-footer-cell {
+  text-align: center;
+}
+
+th.mat-header-cell {
+  flex: 0 0 10%;
+}
+
+td,
+th {
+  /* width: 25%; */
+  font-size: 0.7rem;
+}
+.tableDiv {
+  padding: 1rem 2rem;
+}
+.mat-icon {
+  font-size: 1rem;
+}
+
+.edit {
+  color: yellow;
+}
+
+.id {
+  width: 10%;
+}
+.name {
+  width: 30%;
+}
+.action {
+  width: 20%;
+}
+.active {
+  width: 10%;
 }

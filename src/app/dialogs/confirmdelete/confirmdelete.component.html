@@ -1,0 +1,10 @@
+<div class="dailog" mat-dialog-actions>
+  <p>
+    Are you sure you want to delete
+    <span style="font-weight: bold">{{ country }}</span>
+  </p>
+  <div class="btnDiv">
+    <button mat-button (click)="onDismiss()">No</button>
+    <button mat-raised-button color="warn" (click)="onConfirm()">Yes</button>
+  </div>
+</div>

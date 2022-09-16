@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 /* Changes start here. */
 // Import MSAL and MSAL browser libraries.
 import {
@@ -28,8 +29,18 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
+
 import { EditprofileComponent } from './editprofile/editprofile.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { ConfirmComponent } from './dialogs/confirm/confirm.component';
+import { ConfirmdeleteComponent } from './dialogs/confirmdelete/confirmdelete.component';
+import { MasterformComponent } from './masterform/masterform.component';
 /* Changes end here. */
 
 @NgModule({
@@ -40,8 +51,12 @@ import { EmployeeComponent } from './employee/employee.component';
     WebapiComponent,
     EditprofileComponent,
     EmployeeComponent,
+    ConfirmComponent,
+    ConfirmdeleteComponent,
+    MasterformComponent,
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     /* Changes start here. */
@@ -76,6 +91,14 @@ import { EmployeeComponent } from './employee/employee.component';
       }
     ),
     MatInputModule,
+    MatPaginatorModule,
+    MatIconModule,
+    ToastrModule.forRoot(),
+    MatProgressSpinnerModule,
+    MatDialogModule,
+    MatSelectModule,
+    FormsModule,
+
     /* Changes end here. */
   ],
   providers: [

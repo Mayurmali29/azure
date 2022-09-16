@@ -1,0 +1,11 @@
+.btnDiv {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dialog > h3 {
+  font-size: 1rem;
+}
